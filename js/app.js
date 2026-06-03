@@ -1,3 +1,7 @@
+const inputEl = document.getElementById("inputTexto");
+const btnEl = document.getElementById("btnCalcular");
+const resultEl = document.getElementById("resultadoTexto");
+
 const esPalindromo = (frase) => {
     const fraseLimpia = frase.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?¿¡! ]/g, "");
 
@@ -5,10 +9,6 @@ const esPalindromo = (frase) => {
 
     return fraseLimpia === fraseAlReves;
 };
-
-const inputEl = document.getElementById("inputTexto");
-const btnEl = document.getElementById("btnCalcular");
-const resultEl = document.getElementById("resultadoTexto");
 
 btnEl.addEventListener("click", () => {
     const texto = inputEl.value.trim();
